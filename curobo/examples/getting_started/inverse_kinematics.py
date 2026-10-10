@@ -185,15 +185,20 @@ def single_ik_example():
     """
     config = InverseKinematicsCfg.create(
         robot="franka.yml",
-        num_seeds=32,
+        num_seeds=32, # 猜测是求算的位置点数？为同一个IK目标提供多少种配置
     )
-    ik = InverseKinematics(config)
-    target_link = ik.tool_frames[0]
+    ik = InverseKinematics(config) # 获取配置信息
+    target_link = ik.tool_frames[0] # 
 
     goal_pose = Pose(
-        position=torch.tensor([[0.4, 0.0, 0.4]], device="cuda", dtype=torch.float32),
-        quaternion=torch.tensor([[1.0, 0.0, 0.0, 0.0]], device="cuda", dtype=torch.float32),
+        position=torch.tensor([[0.1, 0.0, 0.0]], device="cuda", dtype=torch.float32),
+        quaternion=torch.tensor([[1.0, 0.2, 2.0, 0.1]], device="cuda", dtype=torch.float32),
     )
+
+    print("DEBUG: THIS IS MY MODIFIED FILE")
+    print("goal position =", goal_pose.position)
+    print("goal quaternion =", goal_pose.quaternion)
+    print("__file__ =", __file__)
 
     result = ik.solve_pose(GoalToolPose.from_poses({target_link: goal_pose}, num_goalset=1))
 

@@ -140,7 +140,7 @@ def build_new_robot(args):
     print(f"Building robot model from URDF: {args.urdf}")
     print(f"Asset path: {args.asset_path}")
 
-    # Create builder
+    # Create builder: loads URDF, meshes, and tool frames
     builder = RobotBuilder(
         urdf_path=args.urdf,
         asset_path=args.asset_path,

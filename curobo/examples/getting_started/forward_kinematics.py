@@ -80,8 +80,8 @@ def forward_kinematics_example():
     Returns:
         True if all checks passed.
     """
-    config = KinematicsCfg.from_robot_yaml_file("franka.yml")
-    robot = Kinematics(config)
+    config = KinematicsCfg.from_robot_yaml_file("franka.yml") # 导入机器人配置文件
+    robot = Kinematics(config) 
 
     print(f"Robot has {robot.get_dof()} degrees of freedom")
     print(f"Tool frames: {robot.tool_frames}")
