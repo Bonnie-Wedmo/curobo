@@ -1,0 +1,25 @@
+{
+  "mode": "mock",
+  "realtime": false,
+  "hardware_test": false,
+  "status": "aborted",
+  "commands": 5,
+  "error": "ConnectionError: Injected MOCK communication failure",
+  "mock_stop_confirmed": true,
+  "rms_error_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "max_error_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

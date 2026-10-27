@@ -1,0 +1,144 @@
+{
+  "kind": "arx_r5_control_host_diagnostics",
+  "read_only": true,
+  "hardware_connected_tested": false,
+  "sdk_imported": false,
+  "python": "3.11.16 (main, Aug 25 2026, 14:00:53) [Clang 22.1.3 ]",
+  "executable": "/home/mimi/ssy/curobo2/.venv/bin/python",
+  "architecture": "x86_64",
+  "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.35",
+  "python_extension_suffix": ".cpython-311-x86_64-linux-gnu.so",
+  "tools": {
+    "cmake": "/usr/bin/cmake",
+    "c++": "/usr/bin/c++",
+    "readelf": "/usr/bin/readelf",
+    "ip": "/usr/sbin/ip",
+    "git": "/usr/bin/git"
+  },
+  "python_modules": {
+    "pybind11": false,
+    "numpy": true,
+    "yaml": true,
+    "scipy": true,
+    "trimesh": true
+  },
+  "sdk_contract": {
+    "repository": "https://github.com/ARXroboticsX/R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "constructor": "arx_r5_python.InterfacesPy(urdf_path, can_port, type)",
+    "wrapper_initialization": "SingleArm calls arx_x(500, 2000, 10); semantics undocumented",
+    "position_command": "set_joint_positions(six_positions), then set_arm_status(5)",
+    "position_feedback": "get_joint_positions() -> vector<double>[7] per InterfacesPy.hpp",
+    "velocity_feedback": "get_joint_velocities() -> vector<double>[7] per InterfacesPy.hpp",
+    "mode_2": "PROTECT / damping (not verified emergency stop or position hold)",
+    "mode_1": "GO_HOME: motion command, never use as emergency stop",
+    "controller_period_s": null,
+    "watchdog_timeout_s": null,
+    "safe_stop_verified": false
+  },
+  "blockers": [
+    "No built Python extension matching this interpreter ABI",
+    "pybind11 absent from this Python environment; CMake/system installation may differ",
+    "No Linux CAN interfaces visible",
+    "SDK initialization, feedback freshness and safe stopping require hardware commissioning"
+  ],
+  "sdk_git": {
+    "returncode": 0,
+    "stdout": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f\n",
+    "stderr": ""
+  },
+  "source_integrity": [
+    {
+      "path": "LICENSE",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "00-readme/readme",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "00-readme/01-python-单臂R5-SDK.pdf",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "00-readme/03-ROS2-单臂R5-SDK.pdf",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "00-readme/02-ROS1-单臂R5-SDK.pdf",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "00-readme/05-R5-ROS2-aloha.pdf",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "py/ARX_R5_python/bimanual/script/single_arm.py",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "py/ARX_R5_python/bimanual/src/single_arm_interface.cpp",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "py/ARX_R5_python/bimanual/lib/arx_r5_src/include/arx_r5_src/interfaces/InterfacesPy.hpp",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "py/ARX_R5_python/bimanual/lib/arx_r5_src/include/arx_r5_src/interfaces/InterfacesThread.hpp",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "py/ARX_R5_python/bimanual/script/R5_master.urdf",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/R5_master.urdf",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/src/R5Controller.cpp",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "ROS2/R5_ws/src/arxmsgros2/arx5_arm_msg/msg/RobotStatus.msg",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/config/single_arm.yaml",
+      "matches_reviewed_source": true
+    }
+  ],
+  "vendor_libraries": [
+    {
+      "path": "/tmp/arx-r5-sdk/py/ARX_R5_python/bimanual/lib/arx_r5_src/libarx_r5_src-arm64.so",
+      "sha256": "d8a9640468feecd1179c7aa840d749da91635985d450c0cb6863d98835c1d607",
+      "elf_header": {
+        "returncode": 0,
+        "stdout": "ELF 头：\n  Magic：   7f 45 4c 46 02 01 01 03 00 00 00 00 00 00 00 00 \n  类别:                              ELF64\n  数据:                              2 补码，小端序 (little endian)\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - GNU\n  ABI 版本:                          0\n  类型:                              DYN (共享目标文件)\n  系统架构:                          AArch64\n  版本:                              0x1\n  入口点地址：               0x13d970\n  程序头起点：          64 (bytes into file)\n  Start of section headers:          3273864 (bytes into file)\n  标志：             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         7\n  Size of section headers:           64 (bytes)\n  Number of section headers:         29\n  Section header string table index: 28\n",
+        "stderr": ""
+      },
+      "dynamic_dependencies": {
+        "returncode": 0,
+        "stdout": "\nDynamic section at offset 0x1f6c60 contains 31 entries:\n  标记        类型                         名称/值\n 0x0000000000000001 (NEEDED)             共享库：[libkdl_parser.so]\n 0x0000000000000001 (NEEDED)             共享库：[liborocos-kdl.so.1.5]\n 0x0000000000000001 (NEEDED)             共享库：[libstdc++.so.6]\n 0x0000000000000001 (NEEDED)             共享库：[libm.so.6]\n 0x0000000000000001 (NEEDED)             共享库：[libgcc_s.so.1]\n 0x0000000000000001 (NEEDED)             共享库：[libc.so.6]\n 0x0000000000000001 (NEEDED)             共享库：[ld-linux-aarch64.so.1]\n 0x000000000000000e (SONAME)             Library soname: [libarx_r5_src-arm64.so]\n 0x000000000000000c (INIT)               0x12a0d0\n 0x000000000000000d (FINI)               0x1a968c\n 0x0000000000000019 (INIT_ARRAY)         0x206878\n 0x000000000000001b (INIT_ARRAYSZ)       104 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x2068e0\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x1f0\n 0x0000000000000005 (STRTAB)             0x34da8\n 0x0000000000000006 (SYMTAB)             0xcb30\n 0x000000000000000a (STRSZ)              866701 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000003 (PLTGOT)             0x206fe8\n 0x0000000000000002 (PLTRELSZ)           119952 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x10cc40\n 0x0000000000000007 (RELA)               0x10bdd0\n 0x0000000000000008 (RELASZ)             3696 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000006ffffffe (VERNEED)            0x10bcc0\n 0x000000006fffffff (VERNEEDNUM)         5\n 0x000000006ffffff0 (VERSYM)             0x108736\n 0x000000006ffffff9 (RELACOUNT)          17\n 0x0000000000000000 (NULL)               0x0\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "/tmp/arx-r5-sdk/py/ARX_R5_python/bimanual/lib/arx_r5_src/libarx_r5_src.so",
+      "sha256": "30239795532e0d440842405f02092c85f95b5f4b0813c2bdf95b22d89960fa18",
+      "elf_header": {
+        "returncode": 0,
+        "stdout": "ELF 头：\n  Magic：   7f 45 4c 46 02 01 01 03 00 00 00 00 00 00 00 00 \n  类别:                              ELF64\n  数据:                              2 补码，小端序 (little endian)\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - GNU\n  ABI 版本:                          0\n  类型:                              DYN (共享目标文件)\n  系统架构:                          Advanced Micro Devices X86-64\n  版本:                              0x1\n  入口点地址：               0x150d40\n  程序头起点：          64 (bytes into file)\n  Start of section headers:          15934344 (bytes into file)\n  标志：             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         11\n  Size of section headers:           64 (bytes)\n  Number of section headers:         38\n  Section header string table index: 37\n",
+        "stderr": ""
+      },
+      "dynamic_dependencies": {
+        "returncode": 0,
+        "stdout": "\nDynamic section at offset 0x20ec98 contains 30 entries:\n  标记        类型                         名称/值\n 0x0000000000000001 (NEEDED)             共享库：[libkdl_parser.so]\n 0x0000000000000001 (NEEDED)             共享库：[liborocos-kdl.so.1.5]\n 0x0000000000000001 (NEEDED)             共享库：[libstdc++.so.6]\n 0x0000000000000001 (NEEDED)             共享库：[libm.so.6]\n 0x0000000000000001 (NEEDED)             共享库：[libgcc_s.so.1]\n 0x0000000000000001 (NEEDED)             共享库：[libc.so.6]\n 0x000000000000000e (SONAME)             Library soname: [libarx_r5_src.so]\n 0x000000000000000c (INIT)               0x12a000\n 0x000000000000000d (FINI)               0x1be2b8\n 0x0000000000000019 (INIT_ARRAY)         0x20f8b0\n 0x000000000000001b (INIT_ARRAYSZ)       104 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x20f918\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x2f0\n 0x0000000000000005 (STRTAB)             0x34b38\n 0x0000000000000006 (SYMTAB)             0xcbc0\n 0x000000000000000a (STRSZ)              864009 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000003 (PLTGOT)             0x210000\n 0x0000000000000002 (PLTRELSZ)           119208 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x10bef8\n 0x0000000000000007 (RELA)               0x10b0a0\n 0x0000000000000008 (RELASZ)             3672 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000006ffffffe (VERNEED)            0x10af90\n 0x000000006fffffff (VERNEEDNUM)         4\n 0x000000006ffffff0 (VERSYM)             0x107a42\n 0x000000006ffffff9 (RELACOUNT)          17\n 0x0000000000000000 (NULL)               0x0\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "built_extensions": [],
+  "can_interfaces": []
+}

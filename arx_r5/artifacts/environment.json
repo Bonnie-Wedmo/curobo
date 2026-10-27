@@ -1,0 +1,21 @@
+{
+  "python": "3.11.16 (main, Aug 25 2026, 14:00:53) [Clang 22.1.3 ]",
+  "executable": "/home/mimi/ssy/curobo2/.venv/bin/python",
+  "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.35",
+  "curobo_import_path": "/home/mimi/ssy/curobo2/curobo/curobo/__init__.py",
+  "packages": {
+    "nvidia-curobo": "0.8.0.post1.dev42+dirty",
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "trimesh": "4.12.2",
+    "yourdfpy": "0.0.60",
+    "viser": "1.1.0",
+    "matplotlib": "3.11.1",
+    "PyYAML": "6.0.3"
+  },
+  "checkout_commit": "c0a1f5f5dca474235045844e8bcf4869e403860d",
+  "existing_user_changes": "untracked study/ left untouched",
+  "cuda_access": "requires GPU access outside restricted sandbox; tested RTX 3070, driver 580.95.05, CUDA 13.0",
+  "dependencies_modified": false
+}

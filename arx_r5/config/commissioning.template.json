@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "robot": {
+    "model": "ARX_R5", "serial": null, "hardware_revision": null,
+    "sdk_commit": null, "calibration_sha256": null, "evidence": null
+  },
+  "limits": {"position_lower": null, "position_upper": null,
+    "velocity": null, "acceleration": null, "evidence": null},
+  "model": {"provenance": null, "locked_gripper": null,
+    "minimum_clearance_m": null, "joint_limit_margin_rad": null,
+    "fixtures_verified": false, "evidence": null},
+  "controller": {
+    "period_s": null, "max_snapshot_age_s": null,
+    "start_tolerance_rad": null, "stationary_velocity_rad_s": null,
+    "tracking_error_rad": null, "max_lateness_s": null,
+    "max_feedback_age_s": null, "interpolation_verified": false,
+    "watchdog_verified": false, "feedback_freshness_verified": false, "host_clock_sync_verified": false,
+    "evidence": null
+  },
+  "stop": {"procedure": null, "acknowledgment_verified": false,
+    "communication_loss_verified": false, "estop_verified": false, "evidence": null},
+  "note": "No guessed hardware safety defaults. Local evidence and measurements are required. This file cannot enable the unimplemented hardware backend."
+}

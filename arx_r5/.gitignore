@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+artifacts/*.tmp
+!config/*.json
+!artifacts/*.json
+!artifacts/**/*.json
+!docs/reference/*.json

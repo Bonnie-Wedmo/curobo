@@ -1,0 +1,33 @@
+test_bad_goal_file_has_no_pass_report (test_deployment.PreflightTests.test_bad_goal_file_has_no_pass_report) ... ok
+test_evidence_does_not_bypass_live_backend_and_numeric_checks (test_deployment.PreflightTests.test_evidence_does_not_bypass_live_backend_and_numeric_checks)
+合成完整证据只用于触发各检查分支，绝不写入生产标定文件。 ... ok
+test_uncommissioned_profile_produces_actionable_blockers (test_deployment.PreflightTests.test_uncommissioned_profile_produces_actionable_blockers) ... ok
+test_delayed_read_rejected_before_command (test_deployment.SchedulerTests.test_delayed_read_rejected_before_command) ... ok
+test_failed_tracking_sample_is_in_error_statistics (test_deployment.SchedulerTests.test_failed_tracking_sample_is_in_error_statistics) ... ok
+test_frozen_feedback_sequence (test_deployment.SchedulerTests.test_frozen_feedback_sequence) ... ok
+test_slow_send_never_bursts_to_catch_up (test_deployment.SchedulerTests.test_slow_send_never_bursts_to_catch_up) ... ok
+test_stop_failure_recorded_without_hiding_original_error (test_deployment.SchedulerTests.test_stop_failure_recorded_without_hiding_original_error) ... ok
+test_bound_snapshot_cannot_disagree_with_start (test_deployment.SnapshotTests.test_bound_snapshot_cannot_disagree_with_start) ... ok
+test_import_requires_measured_mapping (test_deployment.SnapshotTests.test_import_requires_measured_mapping) ... ok
+test_mock_roundtrip_and_source (test_deployment.SnapshotTests.test_mock_roundtrip_and_source) ... ok
+test_recording_mapping_is_explicit (test_deployment.SnapshotTests.test_recording_mapping_is_explicit) ... ok
+test_reject_bad_snapshots (test_deployment.SnapshotTests.test_reject_bad_snapshots) ... ok
+test_forward_approach_moves_tool_without_base_rotation (test_elbow.ElbowCollisionTests.test_forward_approach_moves_tool_without_base_rotation) ... ok
+test_reverse_fold_cannot_export_with_forged_pass (test_elbow.ElbowCollisionTests.test_reverse_fold_cannot_export_with_forged_pass) ... ok
+test_reverse_fold_is_detected_beyond_old_exclusions (test_elbow.ElbowCollisionTests.test_reverse_fold_is_detected_beyond_old_exclusions) ... ok
+test_hardware_rejected_even_with_forged_flags (test_safety.ControlSafetyTests.test_hardware_rejected_even_with_forged_flags) ... ok
+test_keyboard_interrupt_stops_mock (test_safety.ControlSafetyTests.test_keyboard_interrupt_stops_mock) ... ok
+test_mock_completion (test_safety.ControlSafetyTests.test_mock_completion) ... ok
+test_mock_faults_stop_sending (test_safety.ControlSafetyTests.test_mock_faults_stop_sending) ... ok
+test_sdk_feedback_contract (test_safety.ControlSafetyTests.test_sdk_feedback_contract) ... ok
+test_false_collision_claim_cannot_export (test_safety.TrajectorySafetyTests.test_false_collision_claim_cannot_export) ... ok
+test_limits_endpoints_and_hidden_jump (test_safety.TrajectorySafetyTests.test_limits_endpoints_and_hidden_jump) ... ok
+test_nonfinite_and_malformed (test_safety.TrajectorySafetyTests.test_nonfinite_and_malformed) ... ok
+test_protocol_mutations (test_safety.TrajectorySafetyTests.test_protocol_mutations) ... ok
+test_reader_without_site_packages (test_safety.TrajectorySafetyTests.test_reader_without_site_packages) ... ok
+test_valid_numeric (test_safety.TrajectorySafetyTests.test_valid_numeric) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 14.607s
+
+OK

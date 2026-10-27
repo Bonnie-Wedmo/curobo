@@ -1,0 +1,13 @@
+{
+  "review_status": "unconfirmed",
+  "robot_model": "ARX_R5",
+  "robot_serial": null,
+  "sdk_commit": null,
+  "joint_names": ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6"],
+  "sdk_indices": null,
+  "sign": null,
+  "offset_rad": null,
+  "raw_units": {"position": null, "velocity": null},
+  "evidence": {"path": null, "sha256": null, "kind": "hardware_measurement"},
+  "note": "Fill from measured SDK-to-URDF mapping; never assume identity. q_model = sign * unit_scale * q_sdk[index] + offset_rad. This template does not enable hardware."
+}

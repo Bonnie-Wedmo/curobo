@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "kind": "arx_r5_grasp_start_candidate",
+  "joint_names": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6"
+  ],
+  "position_rad": [
+    0.0,
+    0.01,
+    0.12,
+    -0.11,
+    0.02,
+    0.04
+  ],
+  "position_deg": [
+    0.0,
+    0.5729577951308232,
+    6.875493541569878,
+    -6.302535746439055,
+    1.1459155902616465,
+    2.291831180523293
+  ],
+  "source_start_position_rad": [
+    -0.00476837158203125,
+    0.00514984130859375,
+    0.00934600830078125,
+    -0.01087188720703125,
+    0.00095367431640625,
+    -0.01773834228515625
+  ],
+  "source_request_id": "05403b6c47dba257b4197c70b585738fb2da26c485e75be1ddb69feffb2dc784",
+  "delta_from_source_rad": [
+    0.00476837158203125,
+    0.00485015869140625,
+    0.11065399169921875,
+    -0.09912811279296875,
+    0.01904632568359375,
+    0.05773834228515625
+  ],
+  "max_joint_change_deg": 6.340006710640878,
+  "base_T_link6": [
+    [
+      0.9998000264167786,
+      0.01998259127140045,
+      -0.0007998686633072793,
+      0.09214068949222565
+    ],
+    [
+      -0.019998593255877495,
+      0.9990003108978271,
+      -0.039981335401535034,
+      -0.0005050258478149772
+    ],
+    [
+      1.4063073194847675e-07,
+      0.03998933359980583,
+      0.9992001056671143,
+      0.192672997713089
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "link6_translation_from_source_m": 0.02853637933731079,
+  "link6_rotation_from_source_deg": 3.432160440116779,
+  "locked_gripper": {
+    "joint7": 0.044,
+    "joint8": 0.044
+  },
+  "configuration_version": "arx-r5-offline-v2-elbow-body-guard",
+  "provenance": {
+    "config/offline_profile.json": "88b6a0ab1c48077f2681bb6cc4520406374a0f4b4d2a9d3a6ccf709ce82d4a13",
+    "config/robot.yml": "874895c5aced452aaa9621e055898f94c25a684b70b8d22322ac06677b856318",
+    "models/r5_offline.urdf": "2187e543fc6d713bc5b1a65495a0e3f75c5cea14763d9d773dab73dfc845a18b",
+    "models/meshes/base_link.STL": "1ea7ba47065195c7cc12d5372977fea91e96972d806542f90450462e13019306",
+    "models/meshes/link1.STL": "65659b3f97f89c22f674bd38567b599ba2e35f7b305085145a232f642aa179cb",
+    "models/meshes/link2.STL": "c7d693a9c74fba586c6941aa2754116bf1cb1eeb51bea4c31dda7a79d2bd88a9",
+    "models/meshes/link3.STL": "3c5c590f64cc944dd4f843d52b86c393d2a6a222be25f68a063835a04dfd9562",
+    "models/meshes/link4.STL": "da6e53e00ffbf5c3b3ab5bbdb980a74f580bb76298b63bdebf72a0b0505d6ced",
+    "models/meshes/link5.STL": "03a789782b7527bd075d99cc0828d5b0e7d4351ffdb574d28f20681d265a24f7",
+    "models/meshes/link6.STL": "6e33442021162b8e2d035cd6a1700184280118a10e85519264d402bcb94bac12",
+    "models/meshes/link7.STL": "cf13153c5a4058980a472983b80ce73fb0cb7c10a0ff9b7107b88c72b6e6766f",
+    "models/meshes/link8.STL": "19d1dcc773a32f003d9b9d8794f7f821661b5488f35198028db5d1885ca7cc8b"
+  },
+  "cpu_self_collision_validation": {
+    "passed": true,
+    "method": "independent_cpu_spheres_densified_linear_segments",
+    "samples": 1,
+    "max_joint_step_rad": 0.005,
+    "minimum_clearance_m": 0.0002179006114602089,
+    "closest_pair": [
+      "base_link",
+      "link2"
+    ],
+    "continuous_collision_proof": false,
+    "hardware_geometry_verified": false
+  },
+  "gpu_self_collision_validation": {
+    "passed": true,
+    "max_cost": 0.0,
+    "cost_unit": "kernel cost, not metres",
+    "states": 193
+  },
+  "perturbation_validation": {
+    "half_width_rad": 0.01,
+    "half_width_deg": 0.5729577951308232,
+    "nominal_plus_corners_plus_random": [
+      1,
+      64,
+      128
+    ],
+    "random_seed": 20261026,
+    "minimum_sphere_clearance_m": 0.00010932702571153641,
+    "all_inside_joint_limits": true,
+    "scope": "Finite sampled model states; not proof for every pose in the box"
+  },
+  "hardware_eligible": false,
+  "physical_collision_free_verified": false,
+  "environment_collision_checked": false,
+  "transition_from_source_planned": false,
+  "source_feedback_replaced": false,
+  "scope": "Static candidate under current URDF, sphere geometry, configured collision-pair exclusions and fixed-open fingers. No SDK commands sent; not a measured hardware state."
+}

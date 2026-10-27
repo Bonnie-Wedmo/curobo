@@ -1,0 +1,114 @@
+[
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "LICENSE",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/LICENSE",
+    "sha256": "11b6d7cd3c80b5eda4974f4fde6c08ec4c142bd9cb66f1b854974c25dab9cf22"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "00-readme/readme",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/00-readme/readme",
+    "sha256": "89233efe9b5603db320ff74a4b904e86ac6af67bedab1b07019d536357f83714"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "00-readme/01-python-单臂R5-SDK.pdf",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/00-readme/01-python-单臂R5-SDK.pdf",
+    "sha256": "28584a58ca672ad7cc021048e11d25197eeae24de8006aa0d4a4880f4b719939"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "00-readme/03-ROS2-单臂R5-SDK.pdf",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/00-readme/03-ROS2-单臂R5-SDK.pdf",
+    "sha256": "00045b2b67cef249a96a72f77663b6f97bc3f35074072b29eb62745ca02169c7"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "00-readme/02-ROS1-单臂R5-SDK.pdf",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/00-readme/02-ROS1-单臂R5-SDK.pdf",
+    "sha256": "251c8a9b4435496a0f1361e3afedbf344b436fbb20c58fe52d4f88ff0de5eae0"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "00-readme/05-R5-ROS2-aloha.pdf",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/00-readme/05-R5-ROS2-aloha.pdf",
+    "sha256": "af63e5ca9b2b59630fdb746f2528324e8988597aca0697e921d3a5abb579d12e"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "py/ARX_R5_python/bimanual/script/single_arm.py",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/py/ARX_R5_python/bimanual/script/single_arm.py",
+    "sha256": "4758ff1b03d34b23c0b78dbc0d716ae59e39337ceec8df73e7f3a4e48f1903fc"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "py/ARX_R5_python/bimanual/src/single_arm_interface.cpp",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/py/ARX_R5_python/bimanual/src/single_arm_interface.cpp",
+    "sha256": "5478b21beaa042b87086ad1668bb112c20a1e902589d542bc08a5cb9a8379306"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "py/ARX_R5_python/bimanual/lib/arx_r5_src/include/arx_r5_src/interfaces/InterfacesPy.hpp",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/py/ARX_R5_python/bimanual/lib/arx_r5_src/include/arx_r5_src/interfaces/InterfacesPy.hpp",
+    "sha256": "cf486fb0c6513fcc00d136d471a340cb2a86c2bbb96a0b14f8efae4b50fd5eb3"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "py/ARX_R5_python/bimanual/lib/arx_r5_src/include/arx_r5_src/interfaces/InterfacesThread.hpp",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/py/ARX_R5_python/bimanual/lib/arx_r5_src/include/arx_r5_src/interfaces/InterfacesThread.hpp",
+    "sha256": "c38b6a6bc8003abacfa7634ffd45ee3c3d9b68cb707f9e3f0f85c154d3436d52"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "py/ARX_R5_python/bimanual/script/R5_master.urdf",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/py/ARX_R5_python/bimanual/script/R5_master.urdf",
+    "sha256": "0d42a214311168d186d25d7bd4125cd2ce8a6ce39087f235a487a6e440492f17"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/R5_master.urdf",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/R5_master.urdf",
+    "sha256": "1342133b31672e9212ef69ac0347354dda2be3411ce14657d569a264f65884cd"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/src/R5Controller.cpp",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/src/R5Controller.cpp",
+    "sha256": "d67855dae02b91be6ddda78e46c8f4180343e7812e4f544b28e16b28760b3e37"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "ROS2/R5_ws/src/arxmsgros2/arx5_arm_msg/msg/RobotStatus.msg",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/ROS2/R5_ws/src/arxmsgros2/arx5_arm_msg/msg/RobotStatus.msg",
+    "sha256": "9836fb5a4743b68b6f4b0c4d5ecf3e8a8a418b7e2b693439ae8213dc8f1f34a2"
+  },
+  {
+    "repository": "R5",
+    "commit": "e87d09c11edb65f6ae672abc7a41fe2277a2f12f",
+    "path": "ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/config/single_arm.yaml",
+    "url": "https://github.com/ARXroboticsX/R5/blob/e87d09c11edb65f6ae672abc7a41fe2277a2f12f/ROS2/R5_ws/src/ARX_R5_ros2_V7/arx_r5_controller/config/single_arm.yaml",
+    "sha256": "7761d2f010f22ae4b947700b5bcc198c467e9c79e188a430559ce154594961b1"
+  },
+  {
+    "repository": "ARX_Model",
+    "commit": "74386441845f12af4da203843b6400951d6c5530",
+    "path": "R5/R5a/urdf/R5a.urdf",
+    "url": "https://github.com/ARXroboticsX/ARX_Model/blob/74386441845f12af4da203843b6400951d6c5530/R5/R5a/urdf/R5a.urdf",
+    "sha256": "600c945f2a631d10beb6473892818325ce40ad03d80f29517f2692eaaa008f36"
+  }
+]

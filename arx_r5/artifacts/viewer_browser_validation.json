@@ -1,0 +1,15 @@
+{
+  "browser": "Chromium 141, software WebGL",
+  "url": "http://127.0.0.1:8084",
+  "scene_loaded": true,
+  "start_and_goal_buttons": true,
+  "waypoint_seek": true,
+  "playback_advanced": true,
+  "non_loop_playback_reached_goal_and_stopped": true,
+  "collision_spheres_toggle": true,
+  "camera_reset_clicked": true,
+  "captured_animation_waypoints": 41,
+  "javascript_errors": [],
+  "failed_requests": [],
+  "scope": "Local HTTP browser rendering; HTTPS/proxy deployment not tested"
+}

@@ -1,0 +1,92 @@
+{
+  "configuration_version": "arx-r5-offline-v2-elbow-body-guard",
+  "robot_model": "ARX_R5_R5a_offline",
+  "hardware_eligible": false,
+  "joint_names": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6"
+  ],
+  "position_lower": [
+    -3.14,
+    -3.6,
+    -1.57,
+    -1.3,
+    -1.57,
+    -2.1
+  ],
+  "position_upper": [
+    2.6,
+    0.1,
+    1.57,
+    1.3,
+    1.57,
+    2.1
+  ],
+  "position_source": "R5 e87d09c/00-readme/03-ROS2-单臂R5-SDK.pdf, 关节限位表; applicability to this hardware UNCONFIRMED; SDK-to-URDF zero/sign mapping remains unverified; these bounds do not certify geometric reachability",
+  "velocity": [
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.4
+  ],
+  "acceleration": [
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8
+  ],
+  "jerk": 10.0,
+  "dynamics_source": "OFFLINE EXPERIMENT SETTINGS ONLY, not manufacturer limits",
+  "default_position": [
+    0.0,
+    0.0,
+    1.1,
+    -1.0,
+    0.13,
+    0.06
+  ],
+  "adjacent_body_guard": {
+    "joint_name": "joint3",
+    "parent_link": "link2",
+    "child_link": "link3",
+    "excluded_joint_radius_m": 0.05,
+    "source": "Offline joint3 STL triangle-crossing review; see artifacts/elbow_mesh_audit.json. This mask is geometry-derived and not physical hardware clearance certification.",
+    "scope": "Additional upper-arm/forearm body-sphere subset check, excluding the joint housing; not complete adjacent-pair geometry certification"
+  },
+  "locked_gripper": {
+    "joint7": 0.044,
+    "joint8": 0.044
+  },
+  "gripper_source": "R5a URDF upper bounds, chosen fixed-open OFFLINE test state (m); not measured hardware opening or SDK gripper units",
+  "interpolation_dt": 0.025,
+  "endpoint_tolerance": 0.001,
+  "numeric_tolerance": 2e-05,
+  "collision_max_joint_step": 0.005,
+  "collision_padding_m": 0.001,
+  "sphere_max_diameter_m": 0.045,
+  "sphere_link_diameter_m": {
+    "base_link": 0.02,
+    "link2": 0.025,
+    "link3": 0.025,
+    "link5": 0.025,
+    "link7": 0.02,
+    "link8": 0.02
+  },
+  "hardware_blockers": [
+    "R5a versus R5_master wrist geometry and actual hardware revision unresolved",
+    "SDK joint direction, zero offsets, ordering and feedback freshness not measured",
+    "Manufacturer velocity and acceleration limits unavailable",
+    "Gripper geometry/opening and physical base fixture not commissioned",
+    "SDK timed tracking, watchdog and communication-loss behavior unverified",
+    "No verified safe stop with acknowledgment; PROTECT is damping, not emergency stop",
+    "No connected robot, fresh hardware start state, or operator execution authorization"
+  ]
+}

@@ -1,0 +1,890 @@
+{
+  "created_at_utc": "2026-10-19T08:38:21.319469+00:00",
+  "scope": "offline_test_only",
+  "hardware_eligible": false,
+  "provenance": {
+    "config/offline_profile.json": "ad3b4a35da57816bb2c568953e3e6dc6e726e23bb72f16ed2c5e1a50573d17c2",
+    "config/robot.yml": "2a7a97e843ede4c81fbaa57e7420249dce1f0f41fb25c3b7071ed29ff6331986",
+    "models/r5_offline.urdf": "2187e543fc6d713bc5b1a65495a0e3f75c5cea14763d9d773dab73dfc845a18b",
+    "models/meshes/base_link.STL": "1ea7ba47065195c7cc12d5372977fea91e96972d806542f90450462e13019306",
+    "models/meshes/link1.STL": "65659b3f97f89c22f674bd38567b599ba2e35f7b305085145a232f642aa179cb",
+    "models/meshes/link2.STL": "c7d693a9c74fba586c6941aa2754116bf1cb1eeb51bea4c31dda7a79d2bd88a9",
+    "models/meshes/link3.STL": "3c5c590f64cc944dd4f843d52b86c393d2a6a222be25f68a063835a04dfd9562",
+    "models/meshes/link4.STL": "da6e53e00ffbf5c3b3ab5bbdb980a74f580bb76298b63bdebf72a0b0505d6ced",
+    "models/meshes/link5.STL": "03a789782b7527bd075d99cc0828d5b0e7d4351ffdb574d28f20681d265a24f7",
+    "models/meshes/link6.STL": "6e33442021162b8e2d035cd6a1700184280118a10e85519264d402bcb94bac12",
+    "models/meshes/link7.STL": "cf13153c5a4058980a472983b80ce73fb0cb7c10a0ff9b7107b88c72b6e6766f",
+    "models/meshes/link8.STL": "19d1dcc773a32f003d9b9d8794f7f821661b5488f35198028db5d1885ca7cc8b"
+  },
+  "gpu_requested": true,
+  "cases": [
+    {
+      "name": "joint1_negative",
+      "delta_rad": [
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        -0.3,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.00022664666175842285
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 61,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00022664666175842285,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint1_negative.json",
+      "trajectory_sha256": "ab3c901cda3c6ea027d70cfe2ff705e634ea0715685e659f2955748b114e6ba6",
+      "samples": 81,
+      "duration_s": 2.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 115,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00022664666175842285,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 1.3828277589666982e-07,
+      "path_position_margin_rad": 0.11999974250793466
+    },
+    {
+      "name": "joint1_positive",
+      "delta_rad": [
+        0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.3,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.0006379168480634689
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 61,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.0002787252888083458,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint1_positive.json",
+      "trajectory_sha256": "4271cd21ec4e4d87a6c3d607c940d39e5d61e53da16a2190faf8917778d12bad",
+      "samples": 81,
+      "duration_s": 2.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 115,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027871038764715195,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 1.3828277589666982e-07,
+      "path_position_margin_rad": 0.11999568939208993
+    },
+    {
+      "name": "joint2_negative",
+      "delta_rad": [
+        0.0,
+        -0.03,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.51,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.0900000000000003,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.0005718059837818146
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 7,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint2_negative.json",
+      "trajectory_sha256": "915a316354d475a80c6a88dd254f7f4c988f46a38653456ac6599f6b477a6df7",
+      "samples": 41,
+      "duration_s": 1.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 41,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 2.2888183615066282e-07,
+      "path_position_margin_rad": 0.08999977111816415
+    },
+    {
+      "name": "joint2_positive",
+      "delta_rad": [
+        0.0,
+        0.03,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.45,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "rejected",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        -3.337021917104721e-05
+      ],
+      "reason": "ValueError: Endpoint is in model self-collision"
+    },
+    {
+      "name": "joint3_negative",
+      "delta_rad": [
+        0.0,
+        0.0,
+        -0.3,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.53,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.040000000000000036,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.00027916301041841507
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 62,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint3_negative.json",
+      "trajectory_sha256": "d42fa21decfd5dcb67287b58cdfb7ef0b2f2fdd2df313b19859da6169c612abc",
+      "samples": 81,
+      "duration_s": 2.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 115,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 2.8610229518832853e-08,
+      "path_position_margin_rad": 0.039999909400940004
+    },
+    {
+      "name": "joint3_positive",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.3,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -0.9299999999999999,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.00027916301041841507
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 62,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint3_positive.json",
+      "trajectory_sha256": "a40645c9bb54c0935380b049eb1c8e00678241fa07c947421cfed60401ba075f",
+      "samples": 81,
+      "duration_s": 2.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 115,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 6.675720221060999e-08,
+      "path_position_margin_rad": 0.11999831199646005
+    },
+    {
+      "name": "joint4_negative",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.0,
+        -0.15,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.2,
+        0.42,
+        0.14
+      ],
+      "status": "rejected",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        -0.00038204342126846313
+      ],
+      "reason": "ValueError: Endpoint is in model self-collision"
+    },
+    {
+      "name": "joint4_positive",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.0,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        0.09999999999999999,
+        0.42,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.00027916301041841507
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 31,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint4_positive.json",
+      "trajectory_sha256": "3fcf313201f3de2416acaa56d4b6081430440ee5a9506189163da1dc120b4fb7",
+      "samples": 61,
+      "duration_s": 1.5,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 61,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027914438396692276,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 1.3828277589666982e-07,
+      "path_position_margin_rad": 0.11999974250793466
+    },
+    {
+      "name": "joint5_negative",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.15,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.27,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.0002725999802350998
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 31,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.0002725999802350998,
+        "closest_pair": [
+          "link4",
+          "link6"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint5_negative.json",
+      "trajectory_sha256": "2140416ce77cde371321f7bfe3faba7e694ae1674e5fcfdb8228cb0c57959409",
+      "samples": 61,
+      "duration_s": 1.5,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 61,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027259625494480133,
+        "closest_pair": [
+          "link4",
+          "link6"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 1.3828277589666982e-07,
+      "path_position_margin_rad": 0.11999974250793466
+    },
+    {
+      "name": "joint5_positive",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.57,
+        0.14
+      ],
+      "status": "rejected",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        -0.0013893190771341324
+      ],
+      "reason": "ValueError: Endpoint is in model self-collision"
+    },
+    {
+      "name": "joint6_negative",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.03
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.11000000000000001
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.00027916301041841507
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 7,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint6_negative.json",
+      "trajectory_sha256": "2ca3647f308e6939e3417139d693029908c481cfd4a11f9628970503aefe91e5",
+      "samples": 41,
+      "duration_s": 1.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 41,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 1.3828277589666982e-07,
+      "path_position_margin_rad": 0.11999306678771982
+    },
+    {
+      "name": "joint6_positive",
+      "delta_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.17
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        0.00027916301041841507
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 7,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00027916301041841507,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "joint6_positive.json",
+      "trajectory_sha256": "9a9a5d64af8377c9156e537406a5d0993bb0be1d1fa1e275fa5df89e8025af03",
+      "samples": 41,
+      "duration_s": 1.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 41,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.0002791481092572212,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 1.3828277589666982e-07,
+      "path_position_margin_rad": 0.11999998092651376
+    },
+    {
+      "name": "coupled_large",
+      "delta_rad": [
+        0.5,
+        0,
+        0.3,
+        0.15,
+        -0.08,
+        0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.5,
+        -3.48,
+        -0.9299999999999999,
+        0.09999999999999999,
+        0.33999999999999997,
+        0.14
+      ],
+      "status": "gpu_planned_and_validated",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        5.489122122526169e-05
+      ],
+      "straight_segment_diagnostic": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 101,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 5.489122122526169e-05,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "trajectory": "coupled_large.json",
+      "trajectory_sha256": "ad3992ecab02e18e81fa6842e2e8769cb804170b7dd7b2f635505c03e09c2e3d",
+      "samples": 121,
+      "duration_s": 3.0,
+      "collision": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 181,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 5.4885633289813995e-05,
+        "closest_pair": [
+          "base_link",
+          "link2"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      },
+      "max_goal_error_rad": 6.675720221060999e-08,
+      "path_position_margin_rad": 0.11999735832214364
+    },
+    {
+      "name": "coupled_reverse",
+      "delta_rad": [
+        -0.4,
+        0,
+        -0.2,
+        0.1,
+        -0.08,
+        0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        -0.4,
+        -3.48,
+        -1.43,
+        0.05,
+        0.33999999999999997,
+        0.14
+      ],
+      "status": "rejected",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        -0.0001524854451417923
+      ],
+      "reason": "ValueError: Endpoint is in model self-collision"
+    },
+    {
+      "name": "joint2_large_positive",
+      "delta_rad": [
+        0,
+        0.3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.18,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "status": "rejected",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        -0.00013821665197610855
+      ],
+      "reason": "ValueError: Endpoint is in model self-collision"
+    },
+    {
+      "name": "joint6_large_positive",
+      "delta_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.3
+      ],
+      "start": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.14
+      ],
+      "goal": [
+        0.0,
+        -3.48,
+        -1.23,
+        -0.05,
+        0.42,
+        0.44
+      ],
+      "status": "rejected",
+      "endpoint_position_margin_rad": 0.1200000000000001,
+      "endpoint_clearance_m": [
+        0.00027916301041841507,
+        -0.001856354996562004
+      ],
+      "reason": "ValueError: Endpoint is in model self-collision"
+    }
+  ],
+  "note": "Coverage of these goals is not a model-wide safety or hardware acceptance claim",
+  "summary": {
+    "total": 16,
+    "gpu_passed": 10,
+    "rejected": 6,
+    "successful_requested_motion_rad": {
+      "joint1": 0.5,
+      "joint2": 0.03,
+      "joint3": 0.3,
+      "joint4": 0.15,
+      "joint5": 0.15,
+      "joint6": 0.03
+    }
+  }
+}

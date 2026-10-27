@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "states": 14,
+  "links": [
+    "base_link",
+    "link1",
+    "link2",
+    "link3",
+    "link4",
+    "link5",
+    "link6",
+    "link7",
+    "link8"
+  ],
+  "max_position_error_m": 3.332000986233652e-08,
+  "max_orientation_error_rad": 7.179827006386481e-08,
+  "yourdfpy_max_matrix_error": 7.337608542989926e-08,
+  "scope": "URDF implementation consistency only; physical zero/direction unverified",
+  "gpu_self_collision_cost": [
+    0.0,
+    0.00027399268583394587,
+    0.0003202914958819747
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "kind": "arx_r5_deployment_preflight",
+  "checked_at_utc": "2026-10-19T11:08:00.289129+00:00",
+  "hardware_execution_allowed": false,
+  "checks": [
+    {
+      "name": "trajectory_numeric",
+      "status": "pass",
+      "detail": {
+        "passed": true,
+        "scope": "offline_profile_only",
+        "hardware_limits_verified": false,
+        "position_source": "R5 e87d09c/00-readme/03-ROS2-单臂R5-SDK.pdf, 关节限位表; applicability to this hardware UNCONFIRMED; SDK-to-URDF zero/sign mapping remains unverified; these bounds do not certify geometric reachability",
+        "dynamics_source": "OFFLINE EXPERIMENT SETTINGS ONLY, not manufacturer limits",
+        "max_abs_velocity": [
+          0.0921371802687645,
+          0.009213710203766823,
+          0.29944607615470886,
+          0.2994445562362671,
+          0.009213579818606377,
+          0.009213707409799099
+        ],
+        "max_abs_acceleration": [
+          0.18508753180503845,
+          0.01850900612771511,
+          0.6015349626541138,
+          0.601540744304657,
+          0.018510039895772934,
+          0.018508823588490486
+        ]
+      }
+    },
+    {
+      "name": "snapshot_structure",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "current_state_source",
+      "status": "fail",
+      "detail": "mock is not verified live hardware feedback; file age alone is insufficient"
+    },
+    {
+      "name": "planned_start_source",
+      "status": "fail",
+      "detail": "Planned start is test data or has no bound hardware recording"
+    },
+    {
+      "name": "robot_identity_and_mapping",
+      "status": "unverified",
+      "detail": "Commissioning section robot lacks evidence"
+    },
+    {
+      "name": "verified_dynamic_limits",
+      "status": "unverified",
+      "detail": "Commissioning section limits lacks evidence"
+    },
+    {
+      "name": "independent_model_collision",
+      "status": "pass",
+      "detail": {
+        "passed": true,
+        "method": "independent_cpu_spheres_densified_linear_segments",
+        "samples": 219,
+        "max_joint_step_rad": 0.005,
+        "minimum_clearance_m": 0.00017850473523139954,
+        "closest_pair": [
+          "link3",
+          "link5"
+        ],
+        "continuous_collision_proof": false,
+        "hardware_geometry_verified": false
+      }
+    },
+    {
+      "name": "commissioned_geometry_and_margins",
+      "status": "unverified",
+      "detail": "Commissioning section model lacks evidence"
+    },
+    {
+      "name": "controller_timing_and_current_state",
+      "status": "unverified",
+      "detail": "Commissioning section controller lacks evidence"
+    },
+    {
+      "name": "acknowledged_safe_stop",
+      "status": "unverified",
+      "detail": "Commissioning section stop lacks evidence"
+    },
+    {
+      "name": "operator_authorization",
+      "status": "unverified",
+      "detail": "No authorization for this trajectory/current state"
+    },
+    {
+      "name": "trajectory_hardware_qualification",
+      "status": "fail",
+      "detail": "Trajectory was generated with an uncommissioned offline profile"
+    },
+    {
+      "name": "hardware_backend",
+      "status": "fail",
+      "detail": "Live SDK acquisition, timed tracking and acknowledged safe stop are not implemented/commissioned"
+    }
+  ],
+  "note": "Read-only diagnostic; evidence hashes do not certify authenticity or enable SDK",
+  "trajectory_sha256": "67699807e9d927294bf5a151b3cb980d4718b35a27b0417ce214668cfd6158ef",
+  "current_snapshot_sha256": "d60c25ff116f427ac6883e9e065856698120d3a0d817a049aa7442700dba60ff"
+}
